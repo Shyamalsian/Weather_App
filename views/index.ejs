@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+</head>
+
+<body>
+    <div class="main flex justify-center flex-col items-center">
+        <div>
+            <p class="header font-bold">
+                Simply Weather
+            </p>
+        </div>
+        <!-- <img class="w-[10%]" src="https://openweathermap.org/img/wn/50n.png" alt=""> -->
+        <form class="m-auto flex flex-col justify-center" action="/" method="post">
+            <input class="weather_input mb-5 mt-5 text-center" type="text" name="name" placeholder="Enter your name">
+
+
+        </form>
+
+        <div class="result">
+            <!-- <h1>Temperature : </h1> -->
+            <div class="city_name font-bold">
+                <% if(city!=null) { %>
+                    <h1>
+                        <%= city %>
+                    </h1>
+                    <% } %>
+            </div>
+
+
+
+            <div class="temp-desc font-bold">
+                <% if(temp!=null) { %>
+                    <h1>
+                        <%= temp %>
+                    </h1>
+                    <% } %>
+
+                        <% if(desc!=null) { %>
+                            <h1>
+                                <%= desc %>
+                            </h1>
+                            <% } %>
+            </div>
+            <div class="icon">
+                <% if(icon!=null) { %>
+                    <img src="https://openweathermap.org/img/wn/<%= icon %>.png" alt="">
+                    <% } %>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script>
+
+</script>
+
+</html>

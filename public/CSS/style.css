@@ -1,0 +1,51 @@
+*{
+    background-color: black;
+}
+.weather_input{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.weather_input:focus{
+    outline: none;
+}
+
+.main{
+    background-color: black;
+    margin: auto;
+    
+    color: white;
+    width: 30vw;
+    border-top: 30px solid gold;
+    border-bottom: 30px solid gold;
+    border-radius: 10%;
+}
+
+.header{
+    font-size: xx-large;
+    text-align: center;
+}
+
+/* result */
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.city_name{
+    font-size: xx-large;
+    
+}
+
+.temp-desc
+{
+    text-align: center;
+
+}
+
+.icon img
+{
+    width: 10vw;
+}
